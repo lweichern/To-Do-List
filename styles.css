@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ffcef3;
+}
+
+header{
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #f0f0f0;
+    background-color: #9e86ce;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.container{
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#form form input[type=text], #details{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    transition: 0.2s;
+    background-color: inherit;
+}
+
+#details{
+    transform: translateY(16px);
+    border-bottom: 2px solid gray;
+    resize: none;
+}
+
+#details::placeholder{
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+span{
+    color: red;
+    background-color: inherit;
+    position: absolute;
+    /* display: none; */
+}
+
+.name-empty{
+    transform: translateX(-440px);
+}
+
+.status-empty{
+    transform: translateX(-227px);
+}
+
+.details-empty{
+    transform: translateX(-30px);
+}
+
+label{
+    background-color: inherit;
+}
+
+#form form input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    transform: translateY(3px);
+}
+
+form{
+    background-color: turquoise;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+input{
+    margin: 15px;
+}
+
+#form form input[type=submit]{
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.item-list ul li{
+    list-style: none;
+    width: 20%;
+    padding: 10px;
+    background-color: inherit;
+}
+
+.item-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: inherit;
+}
+
+.item-list{
+    padding: 20px;
+    background: linear-gradient(turquoise, purple);
+}
+
+.listname, .liststatus{
+    font-size: 20px;
+}
+
+.list{
+    /* border: 1px solid black; */
+    background: rgba(255, 255, 255, 0.3535);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.listname, .list-details, .liststatus{
+    border-bottom: 1px solid black;
+    margin: 10px;
+    background-color: transparent;
+}
+
+.listclose, .fas{
+    background-color: transparent;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.important{
+    /* background: rgba(255, 0, 0, 0.8); */
+    box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.9);
+}
